@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         app: web-app
-    spec:           # <--- THẲNG HÀNG với 'metadata' ở trên
-      containers:   # <--- THỤT VÀO 2 khoảng trắng so với 'spec'
+    spec:
+      containers:
       - name: nginx
-        image: nginx:phien-ban-loi
+        image: nginx:1.14.2
         ports:
         - containerPort: 80

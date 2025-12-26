@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-app
 spec:
-  replicas: 1  # Bắt đầu với 1 pod
+  replicas: 2  # Bắt đầu với 1 pod
   selector:
     matchLabels:
       app: web-app

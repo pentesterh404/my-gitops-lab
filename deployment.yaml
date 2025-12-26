@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-app
 spec:
-  replicas: 2  # Bắt đầu với 1 pod
+  replicas: 1  # Bắt đầu với 1 pod
   selector:
     matchLabels:
       app: web-app
@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         app: web-app
-  spec:
+    spec:
     containers:
-    - name: nginx
-      image: nginx:1.14.2
-      ports:
-      - containerPort: 80
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80

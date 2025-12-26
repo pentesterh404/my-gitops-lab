@@ -14,6 +14,6 @@ spec:
     spec:           # <--- THẲNG HÀNG với 'metadata' ở trên
       containers:   # <--- THỤT VÀO 2 khoảng trắng so với 'spec'
       - name: nginx
-        image: nginx:1.27.3
+        image: nginx:phien-ban-loi
         ports:
         - containerPort: 80
